@@ -52,7 +52,7 @@ public class IPv4 extends BasePacket {
 
     protected byte version;
     protected byte headerLength;
-    protected byte diffServ;
+    protected byte diffServ;//区分服务
     protected short totalLength;
     protected short identification;
     protected byte flags;

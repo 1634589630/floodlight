@@ -67,7 +67,7 @@ public class TableFeatures {
 	private OFTableFeaturePropTableSyncFrom tsf;
 	
 	private long config;
-	private long maxEntries;
+	private long maxEntries;//这个是我想知道的
 	private U64 metadataMatch;
 	private U64 metadataWrite;
 	private String tableName;

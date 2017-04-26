@@ -54,6 +54,7 @@ Command descriptions:
     switchclusters
     counter [DPID] <name>
     switch_stats [DPID] <port | queue | flow | aggregate | desc | table | features | host>
+　　　　pktin_cn
 """
 
 def lookupPath(cmd):
@@ -91,6 +92,8 @@ def lookupPath(cmd):
         path = '/wm/device/'
         if len(args.otherargs) == 1 and args.otherargs[0] == 'debug':
             path = '/wm/device/debug'
+    elif args.cmd == 'pktin_cnt':
+        path='wm/statics/pktinhistory/json'
     else:
         print usage_desc
         path = ''
